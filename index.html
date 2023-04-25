@@ -1,61 +1,6 @@
 <html>
   <head>
     <style>
-      #fatorial {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  #verificacpf
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-      
-	  	  #fibonacci
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  	  #numperfeito
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  	  #verificaprimo
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  	  #possibtriangulo
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  #multmatrizes
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 30px;
-      }
-	  
-	  #multiplica
-	  {
-        text-align: center; 
-        top: 100px;
-        font-size: 20px;
-      }
-	  
       button {
         font-size: 20px;
         color: white;
@@ -74,84 +19,14 @@
         margin: 0 auto;
       }
 	  
-	    table {
-    position: relative;
- right:-400px;
-  }
   
   body {
 background-color: #0ACEDC;
 }
     </style>
     <h1>Exercícios de JavaScript</h1>
-    <script src="exercicios.js"></script>
   </head>
   <body>
-    <p style="color: rgb(36,0,110);" id="fatorial">Fatorial</p>
-    <input style="background-color: blue; color: white;" type="number" id="numero">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="calculaFatorial()">Calcular Fatorial</button>
-	
-	<p style="color: rgb(36,0,110);" id="verificacpf">Verificação de CPF</p>
-    <input style="background-color: blue; color: white;" type="number" id="cpf">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="verificacpf()">Verificar o CPF</button>
-	
-		<p style="color: rgb(36,0,110);" id="fibonacci">Fibonacci</p>
-    <input style="background-color: blue; color: white;" type="number" id="fibo">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="fibonacci()">Calcular a Sequência Fibonacci</button>
-	
-		<p style="color: rgb(36,0,110);" id="numperfeito">Números Perfeitos em Intervalo</p>
-    <input style="background-color: blue; color: white;" type="number" id="numperfeitoinicio">
-	<input style="background-color: blue; color: white;" type="number" id="numperfeitofinal">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="calculanumperfeito()">Identificar os Números Perfeitos</button>
-	
-		<p style="color: rgb(36,0,110);" id="verificaprimo">Ver se o número é primo</p>
-    <input style="background-color: blue; color: white;" type="number" id="verificaprimo2">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="identificanumprimo()">Verificar</button>
-	
-	<p style="color: rgb(36,0,110);" id="possibtriangulo">Possibilidade de Formação de um Triângulo</p>
-    <input style="background-color: blue; color: white;" type="number" id="valor1">
-	<input style="background-color: blue; color: white;" type="number" id="valor2">
-	<input style="background-color: blue; color: white;" type="number" id="valor3">
-    <button style="font-size: 20px; color: white; background-color: blue;" onclick="verificatriangulo()">Checar</button>
-	
-	<p style="color: rgb(36,0,110);" id="multmatrizes">Multiplicar Matrizes 3x3</p>
-	<table>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l1c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l1c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l1c3"></td>
-  </tr>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l2c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l2c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l2c3"></td>
-  </tr>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l3c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l3c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz1l3c3"></td>
-  </tr>
-</table>
-<p id="multiplica">Multiplicando por</p>
-<table>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l1c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l1c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l1c3"></td>
-  </tr>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l2c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l2c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l2c3"></td>
-  </tr>
-  <tr>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l3c1"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l3c2"></td>
-    <td><input style="background-color: blue; color: white;" type="text" id="matriz2l3c3"></td>
-  </tr>  
-</table>
-<button style="font-size: 20px; color: white; background-color: blue;" onclick="multiplicamatrizes()">Multiplicar</button>
-
-
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="location.href='./Exercicio1/exercicios1.html';">Fatorial,Fibonacci,Números Primos e Perfeitos,Possibilidade de Triângulo,Multiplicação de Matrizes e Verificação de CPF.</button>
   </body>
 </html>
