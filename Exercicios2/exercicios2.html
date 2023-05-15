@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <style>
+      #paridade {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+
+      #paridadeparametro {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	  #fibonacciparametro {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	  #numperfeito {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	  #numperfeitointervalo {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	  #checastringanagrama {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	 #checastringpoli {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	 #reordenar4valores {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      }
+	  
+	 #retornarnum {
+        text-align: center; 
+        top: 100px;
+        font-size: 30px;
+      } 
+	  
+	  #intervalo
+	  {
+        text-align: center; 
+        top: 100px;
+        font-size: 20px;
+      }
+	  
+	 #string1
+	  {
+        text-align: center; 
+        top: 100px;
+        font-size: 20px;
+      }
+	  
+	 #string2
+	  {
+        text-align: center; 
+        top: 100px;
+        font-size: 20px;
+      }
+	  
+	 #numordena
+	  {
+        text-align: center; 
+        top: 100px;
+        font-size: 20px;
+      }
+	  
+	 #chamartodas
+	  {
+        text-align: center; 
+        top: 100px;
+        font-size: 20px;
+      }
+	  
+      button {
+        font-size: 20px;
+        color: white;
+        background-color: blue;
+      }
+
+      h1 {
+        text-align: center;
+        line-height: 1;
+        height: 100px;
+        color: blue;
+      }
+
+      input, button {
+        display: block;
+        margin: 0 auto;
+      }
+	  
+	    table {
+    position: relative;
+ right:-400px;
+  }
+  
+  body {
+background-color: #0ACEDC;
+}
+    </style>
+    <h1>Exercícios de JavaScript</h1>
+    <script src="exercicios.js"></script>
+  </head>
+  <body>
+    <p style="color: rgb(36,0,110);" id="paridade">Ver Se o Número é Par ou ímpar</p>
+    <input style="background-color: blue; color: white;" type="number" id="numero">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="ParouImpar()">Verificar</button>
+
+    <p style="color: rgb(36,0,110);" id="paridadeparametro">Ver Se o Número é Par ou ímpar por Parâmetro</p>
+    <input style="background-color: blue; color: white;" type="number" id="numeroparametro">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="verificarParidade(numero)">Verificar</button>
+	
+	<p style="color: rgb(36,0,110);" id="fibonacciparametro">Fibonacci por Parâmetro</p>
+    <input style="background-color: blue; color: white;" type="number" id="numfibonacciparametro">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="FibonacciParametro()">Calcular a Sequência Fibonacci</button>
+	
+	<p style="color: rgb(36,0,110);" id="numperfeito">Números Perfeitos por Parâmetro</p>
+    <input style="background-color: blue; color: white;" type="number" id="numperfeitoentrada">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="verificarNumeroPerfeito()">Identificar os Números Perfeitos</button>
+	
+	<p style="color: rgb(36,0,110);" id="numperfeitointervalo">Números Perfeitos em Intervalo por Parâmetro</p>
+	<p id="intervalo">De 0 até:</p>
+	<input style="background-color: blue; color: white;" type="number" id="intervalofinal">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="calculanumperfeito()">Identificar os Números Perfeitos no Intervalo</button>
+	
+	<p style="color: rgb(36,0,110);" id="checastringanagrama">Checar se duas strings formam um anagrama</p>
+	<p id="string1">String 1</p>
+	<input style="background-color: blue; color: white;" type="text" id="entradastring1">
+	<p id="string2">String 2</p>
+	<input style="background-color: blue; color: white;" type="text" id="entradastring2">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="verificarAnagrama()">Checar</button>
+	
+	<p style="color: rgb(36,0,110);" id="checastringpoli">Checar se a string é um palíndromo</p>
+	<input style="background-color: blue; color: white;" type="text" id="entradastringpoli">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="checarPalindromo()">Checar</button>
+	
+	<p style="color: rgb(36,0,110);" id="reordenar4valores">Reordenar 4 valores</p>
+	<p id="numordena">Números:</p>
+	<input style="background-color: blue; color: white;" type="number" id="entradanumero1">
+	<input style="background-color: blue; color: white;" type="number" id="entradanumero2">
+	<input style="background-color: blue; color: white;" type="number" id="entradanumero3">
+	<input style="background-color: blue; color: white;" type="number" id="entradanumero4">
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="reordenarValores()">Ordenar Valores</button>
+	
+	<p style="color: rgb(36,0,110);" id="retornarnum">Chamar todas as Funções</p>
+	<p id="chamartodas">É necessário preencher os campos das funcionalidades anteriores</p>
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="chamarTodasAsFuncoes()">Chamar</button>
+	
+	<p style="color: rgb(36,0,110);" id="paridade">Checa se a Função Para ou Não com um Número Digitado</p>
+    <button style="font-size: 20px; color: white; background-color: blue;" onclick="adivinharNumero()">Verificar</button>
+
+  </body>
+</html>
